@@ -1,0 +1,19 @@
+{
+    "name": "sintexph/datasource-lib",
+    "description": "Library that will pull out the employee and other data from pams",
+    "authors": [{
+        "name": "Kevin Loquencio",
+        "email": "kevin.loquencio@gmail.com"
+    }],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SintexDatasource\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7"
+    },
+    "minimum-stability": "dev"
+}
