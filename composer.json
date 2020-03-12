@@ -12,5 +12,12 @@
             "SintexDatasource\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SintexDatasource\\DatasourceProvider"
+            ]
+        }
+    }
 }
