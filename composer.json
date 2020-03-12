@@ -12,8 +12,5 @@
             "SintexDatasource\\": "src/"
         }
     },
-    "require": {
-        "php": ">=7"
-    },
     "minimum-stability": "dev"
 }
