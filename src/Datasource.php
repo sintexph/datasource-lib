@@ -55,7 +55,24 @@ class Datasource
 
     }
     
+    public static function departments()
+    {
+            $result=static::request('/api/department/get/all')->getBody()->getContents();
+            if(empty($result))
+                return null;
+            else
+                return \json_decode($result);
 
+    }
+    public static function sections()
+    {
+            $result=static::request('/api/section/get/all')->getBody()->getContents();
+            if(empty($result))
+                return null;
+            else
+                return \json_decode($result);
+
+    }
     public static function factories()
     {
             $result=static::request('/api/factory/get/all')->getBody()->getContents();
