@@ -82,4 +82,13 @@ class Datasource
                 return \json_decode($result);
 
     }
+
+    public static function plantilla($factory=null,$section=null,$department=null)
+    {
+        $result=static::request('/api/employee/count?factory='.$factory.'&section='.$section.'&department='.$department)->getBody()->getContents();
+        if(empty($result))
+            return null;
+        else
+            return \json_decode($result);
+    }
 }
