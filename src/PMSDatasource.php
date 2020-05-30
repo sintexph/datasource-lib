@@ -18,7 +18,7 @@ class PMSDatasource
 
     public static function base_uri()
     {
-        return config('sintex-datasource.api.url');
+        return config('pms-source.api.url');
     }
     
     private static function get_request($url)
