@@ -4,6 +4,6 @@ return [
     'api' => [
         'url' => '',
         'authorization' => '',
-        'name'=>'test'
+        'name'=>''
     ], 
 ];
