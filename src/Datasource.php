@@ -45,6 +45,16 @@ class Datasource
         return null;
 
     }
+
+    public static function search($q)
+    {
+        $result=static::request('/api/employee/find?q='.$q)->getBody()->getContents();
+        if(empty($result))
+            return [];
+        else
+            return \json_decode($result);
+    }
+
     public static function employees($status=1)
     {
         $result=static::request("/api/employee/fetch_all?status=$status&limit=-1")->getBody()->getContents();
